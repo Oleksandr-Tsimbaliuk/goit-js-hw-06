@@ -6,7 +6,19 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
-// 1-------------
+
+  const ingredientsList  = document.querySelector("#ingredients")
+ 
+  ingredients.forEach(ingredient => {
+ 
+  const elementLi = document.createElement("Li")
+  elementLi.textContent = ingredient
+  elementLi.classList.add("item")
+  ingredientsList.append(elementLi)
+});
+
+
+// 2.
 // const ingredientsList = document.querySelector("#ingredients")
 // // console.log(ingredientsList);
 // const arrayItems = []
@@ -25,7 +37,7 @@ const ingredients = [
 // ingredientsList.append(...arrayItems)
 
 
-// 2----------------
+// 3.
 // const ingredientsList = document.querySelector('#ingredients');
 
 // const items = ingredients.map(ingredient => {
@@ -40,7 +52,7 @@ const ingredients = [
 // ingredientsList.append(...items);
 
 
-// 3----------------------
+// 4.
 // const ingredientsList = document.querySelector('#ingredients');
 
 // const items = ingredients.map(ingredient => {

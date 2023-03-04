@@ -3,20 +3,18 @@ const formMail = formEl.firstElementChild.firstElementChild;
 const formPass = formEl.firstElementChild.nextElementSibling.firstElementChild;
 const formBtn = formEl.lastElementChild;
 
-formBtn.addEventListener("click", onformEl);
-
-function onformEl() {
+formEl.addEventListener("submit", (event) => {
   if (formMail.value !== "" && formPass.value !== "") {
-    formEl.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const userData = {
-        mail: formMail.value,
-        pass: formPass.value,
-      };
-      console.log(userData);
-      event.target.reset();
-    });
+    event.preventDefault();
+    const userData = {
+      mail: formMail.value,
+      pass: formPass.value,
+    };
+    console.log(userData);
+    event.target.reset();
   } else {
-     alert("Fill all form data!");
+      alert("Fill all form data!");
   }
-}
+});
+
+

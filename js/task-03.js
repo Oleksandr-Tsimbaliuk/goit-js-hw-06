@@ -22,23 +22,3 @@ const galleryItems = images.map((image)=>{
 gallery.insertAdjacentHTML("afterbegin", galleryItems)
 
 
-// 2.
-// const gallery = document.querySelector(".gallery")
-// console.log(gallery);
-
-// const galleryItems = images.map(image => {
-//   return `<li><img src="${image.url}" alt="${image.url}" width=320></li>`
-// }).join("")
-
-// console.log(galleryItems);
-
-// gallery.insertAdjacentHTML("afterbegin", galleryItems)
-
-
-
-// 3.
-// const gallery = document.querySelector('.gallery');
-// const galleryItem = ({ url, alt }) =>
-//   `<li><img src="${url}" alt="${alt}"></li>`;
-// const galleryItems = images.map(galleryItem).join('');
-// gallery.insertAdjacentHTML('beforeend', galleryItems);

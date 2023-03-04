@@ -6,8 +6,8 @@ const formPass = formEl.children[1].firstElementChild
 const formBtn = formEl.lastElementChild;
 
 formEl.addEventListener("submit", (event) => {
+  event.preventDefault();
   if (formMail.value !== "" && formPass.value !== "") {
-    event.preventDefault();
     const userData = {
       mail: formMail.value,
       pass: formPass.value,

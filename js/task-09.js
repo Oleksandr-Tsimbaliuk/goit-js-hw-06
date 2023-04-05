@@ -10,3 +10,4 @@ btnChangeColor.addEventListener('click', (event) => {
  document.body.style.backgroundColor = getRandomHexColor();
 nameColor.textContent = getRandomHexColor()
 })
+
